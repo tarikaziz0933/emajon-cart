@@ -26,7 +26,7 @@ const Product = (props) => {
                     Price: {price}
                 </p>
                 <p className="text-slate-300">
-                    Ratings: {ratings}
+                    Ratingss: {ratings}
                 </p>
             </div>
             <Link to=''>
