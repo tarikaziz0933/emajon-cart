@@ -2,7 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Product = (props) => {
-    const { name, img, seller, price, ratings } = props.product;
+    const { product, handleAddToCart } = props;
+    const { name, img, seller, price, ratings } = product;
     return (
         <div
             className=" bg-orange-700 shadow-xl hover:shadow-2xl  flex flex-col justify-between"
@@ -29,8 +30,8 @@ const Product = (props) => {
                 </p>
             </div>
             <Link to=''>
-                <button className="m-3 flex btn btn-outline btn-warning  rounded-none">
-                    View Details
+                <button onClick={() => handleAddToCart(product)} className="m-3 btn btn-outline btn-warning  rounded-none">
+                    Add To Cart
                 </button>
             </Link>
         </div>
