@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Customerlistdata from './Customerlistdata';
 
 const CustomerList = () => {
     const [customers, setCustomers] = useState([]);
@@ -25,14 +26,10 @@ const CustomerList = () => {
                     <tbody>
                         {/* row 1 */}
                         {
-                            customers.map(customer =>
-                                <tr className="hover">
-                                    <th>{customer.id}</th>
-                                    <td>{customer.name}</td>
-                                    <td>{customer.phone}</td>
-                                    <td>{customer.date}</td>
-                                </tr>
-
+                            customers.map(customer => <Customerlistdata
+                                key={customer.id}
+                                customer={customer}
+                            ></Customerlistdata>
                             )
                         }
 

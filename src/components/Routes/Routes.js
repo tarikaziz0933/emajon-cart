@@ -2,7 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 import { productsAndCartLoader } from "../../loaders/productsAndCartLoader";
 import About from "../About/About";
 import CustomerList from "../Dashboard/Dashboard/CustomerList";
-import OrderList from "../Dashboard/OrderList/OrderList";
+import DashboardOrder from "../DashboardOrder/DashboardOrder";
 import Home from "../Home/Home";
 import DashboardLayout from "../layout/DashboardLayout";
 import Main from "../layout/Main";
@@ -50,7 +50,7 @@ const router = createBrowserRouter([
             },
             {
                 path: '/dashboard/orderlist',
-                element: <OrderList></OrderList>
+                element: <DashboardOrder></DashboardOrder>
 
             }
         ]
