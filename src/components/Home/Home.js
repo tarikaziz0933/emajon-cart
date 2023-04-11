@@ -43,7 +43,7 @@ const Home = () => {
     }
     return (
         <div className='flex container mx-2'>
-            <div className='w-4/5 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 md:w-11/12 mx-auto gap-8 mt-8'>
+            <div className='w-4/5 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 md:w-11/12 gap-8 m-8'>
                 {
                     products.map(product => <Product
                         key={product.id}
@@ -52,7 +52,7 @@ const Home = () => {
                     ></Product>)
                 }
             </div>
-            <div className='w-1/5 bg-orange-200'>
+            <div className='w-1/5 ml-2 bg-orange-200'>
                 <Cart
                     cart={cart}
                 ></Cart>

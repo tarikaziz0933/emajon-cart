@@ -1,9 +1,14 @@
 import { createBrowserRouter } from "react-router-dom";
 import { productsAndCartLoader } from "../../loaders/productsAndCartLoader";
 import About from "../About/About";
+import CustomerList from "../Dashboard/Dashboard/CustomerList";
+import OrderList from "../Dashboard/OrderList/OrderList";
 import Home from "../Home/Home";
+import DashboardLayout from "../layout/DashboardLayout";
 import Main from "../layout/Main";
+import Login from "../Login/Login";
 import Orders from "../Orders/Orders";
+import SignUp from "../SignUp/SignUp";
 
 const router = createBrowserRouter([
     {
@@ -23,6 +28,30 @@ const router = createBrowserRouter([
             {
                 path: '/about',
                 element: <About></About>
+            },
+            {
+                path: '/login',
+                element: <Login></Login>
+            },
+            {
+                path: '/signUp',
+                element: <SignUp></SignUp>
+            }
+        ]
+    },
+    {
+        path: '/dashboard',
+        element: <DashboardLayout></DashboardLayout>,
+        children: [
+            {
+                path: '/dashboard',
+                element: <CustomerList></CustomerList>
+
+            },
+            {
+                path: '/dashboard/orderlist',
+                element: <OrderList></OrderList>
+
             }
         ]
     }

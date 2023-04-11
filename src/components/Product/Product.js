@@ -6,10 +6,10 @@ const Product = (props) => {
     const { name, img, seller, price, ratings } = product;
     return (
         <div
-            className=" bg-orange-700 shadow-xl hover:shadow-2xl  flex flex-col justify-between"
+            className=" bg-orange-400 shadow-xl hover:shadow-2xl  flex flex-col justify-between rounded-lg"
         >
             <div>
-                <div className="h-64 cursor-zoom-in hover:mask-heart mask">
+                <div className="h-64 rounded-lg">
                     <img src={img} alt="" className="h-full w-full object-cover" />
                 </div>
                 <div className="mx-3">
@@ -26,7 +26,7 @@ const Product = (props) => {
                     Price: {price}
                 </p>
                 <p className="text-slate-300">
-                    Ratingss: {ratings}
+                    Ratings: {ratings}
                 </p>
             </div>
             <Link to=''>
