@@ -23,6 +23,19 @@ const SignUp = () => {
                     />
                 </div>
                 <div className="space-y-1 text-sm">
+                    <label htmlFor="username" className="block   text-gray-400">
+                        Phone Number
+                    </label>
+                    <input
+                        // type="number"
+                        name="number"
+                        id="number"
+                        placeholder="Phone Number"
+                        className="w-full px-4 py-3    border-gray-700   bg-gray-900   text-gray-100 focus:border-violet-400"
+                        required
+                    />
+                </div>
+                <div className="space-y-1 text-sm">
                     <label htmlFor="email" className="block   text-gray-400">
                         Email
                     </label>

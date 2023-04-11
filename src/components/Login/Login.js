@@ -11,13 +11,13 @@ const Login = () => {
             >
                 <div className="space-y-1 text-sm">
                     <label htmlFor="email" className="block   text-gray-400">
-                        Email address
+                        Phone Number
                     </label>
                     <input
-                        type="email"
-                        name="email"
-                        id="email"
-                        placeholder="abc@gmail.com"
+                        // type="number"
+                        name="number"
+                        id="number"
+                        placeholder="0170000000"
                         className="w-full px-4 py-3    border-gray-700   bg-gray-900   text-gray-100 focus:border-violet-400"
                     />
                 </div>
